@@ -16,6 +16,7 @@ class Transporters::SessionsController < Devise::SessionsController
 #  # DELETE /resource/sign_out
   def destroy
     if transporter_signed_in? 
+      puts " Entered Destroy session for Transporter"
       current_transporter
       current_transporter.status = "offwork"
       current_transporter.save

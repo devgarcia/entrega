@@ -120,7 +120,7 @@
         <div class="d-inline col-sm-6 cost-values">            
           <%= @order.cost  %>
         </div>
-        <% if @charge.present? %>
+        <% if @order.charge.present? %>
           <div class="d-inline col-sm-6 cost-values">  
             <%= @order.charge.status %>
             <%= @order.charge.payment_method %>
